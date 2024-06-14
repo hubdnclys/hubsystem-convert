@@ -1,0 +1,33 @@
+### 회원가입
+POST http://localhost:8080/v1/employee/signup
+Content-Type: application/json
+
+{
+  "email": "test1@naver.com",
+  "password": "123456!",
+  "name": "이유상",
+  "phone": "01095640811",
+  "rank": "STAFF",
+  "department": "PROGRAMMING"
+}
+
+### 로그인
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "email": "test1@naver.com",
+  "password": "123456!"
+}
+
+### 사용자 토큰 테스트
+GET http://localhost:8080/v1/employee/info
+Authorization: ACCESS TOKEN
+
+### accesstoken 재발급
+POST http://localhost:8080/access-token
+Content-Type: application/json
+
+{
+  "refreshToken": "REFRESH TOKEN"
+}

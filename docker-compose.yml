@@ -1,0 +1,35 @@
+version: '3'
+services:
+  hubdnc-db:
+    container_name: hubsystem_convert_db
+    build:
+      context: ./database
+      dockerfile: Dockerfile
+    ports:
+      - "3307:3306"
+    restart: always
+    healthcheck:
+      test: [ "CMD", "mysqladmin" ,"ping", "-h", "localhost" ]
+      timeout: 30s
+      retries: 3
+    networks:
+      - network
+
+  hubdnc-redis:
+    container_name: hubsystem_convert_redis
+    image: redis:6
+    hostname: redis
+    command: redis-server --port 6379
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./redis/data:/data
+    environment:
+      - TZ=Asia/Seoul
+    labels:
+      - "name=redis"
+      - "mode=standalone"
+    restart: always
+
+networks:
+  network:

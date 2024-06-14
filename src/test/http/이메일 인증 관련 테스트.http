@@ -1,0 +1,11 @@
+### 이메일 인증 메일 발송
+POST http://localhost:8080/v1/mail
+Content-Type: application/json
+
+{
+  "email": "hubdnclys@gmail.com"
+}
+
+### 이메일 인증 메일 검증
+GET http://localhost:8080/v1/mail/verify-code?code=557054
+Content-Type: application/json

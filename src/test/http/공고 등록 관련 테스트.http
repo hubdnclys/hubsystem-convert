@@ -1,0 +1,104 @@
+### 공고 등록 테스트
+POST http://localhost:8080/v1/recruit
+Authorization: ACCESS TOKEN
+Content-Type: application/json
+
+{
+  "title": "채용공고",
+  "startDate": "2024-06-10",
+  "endDate": "2024-07-10",
+  "permanentRecruitment": false,
+  "recruitDepartment": "PROGRAMMING",
+  "isNew": true,
+  "isCareer": true,
+  "minCareer": 0,
+  "maxCareer": 3,
+  "workspaceName": "허브디앤씨 본사",
+  "employmentType": "REGULAR",
+  "interviewerIdx": 1,
+  "postcode": "177-221",
+  "address": "서울시 강남구",
+  "detail_address": "봉은사로",
+  "detail": "백엔드 개발자 채용",
+  "recruitInfo": "백엔드 개발자 채용",
+  "treatmentInfo": "spring, node를 통해 백엔드 개발을 해보신 분",
+  "recruitBenefitsList": [
+    {
+      "icon": "rocket",
+      "title": "스낵바",
+      "description": "스낵바 무제한",
+      "recruitBenefits": [
+        {
+          "originName": "스낵바 사진",
+          "saveName": "01112ts",
+          "path": "4",
+          "extension": "jpg",
+          "size": 10
+        }
+      ]
+    },
+    {
+      "icon": "rocket",
+      "title": "도서비 지원",
+      "description": "도서비 지원",
+      "recruitBenefits": [
+        {
+          "originName": "책 사진",
+          "saveName": "011122ts",
+          "path": "10",
+          "extension": "jpg",
+          "size": 20
+        }
+      ]
+    }
+  ],
+  "recruitStepList": [
+    {
+      "title": "코딩 테스트",
+      "isAlarm": true,
+      "isRejectAlarm": true,
+      "recruitPaperNo": 1,
+      "alarmTemplateNo": 1,
+      "rejectTemplateNo": 1
+    },
+    {
+      "title": "기술 면접",
+      "isAlarm": true,
+      "isRejectAlarm": true,
+      "recruitPaperNo": 1,
+      "alarmTemplateNo": 1,
+      "rejectTemplateNo": 1
+    },
+    {
+      "title": "컬쳐핏 면접",
+      "isAlarm": true,
+      "isRejectAlarm": true,
+      "recruitPaperNo": 1,
+      "alarmTemplateNo": 1,
+      "rejectTemplateNo": 1
+    }
+  ],
+  "resumeHasCareer": true,
+  "resumeDesiredPay": true,
+  "resumeLanguage": true,
+  "resumeSubmitted": true,
+  "resumePortfolioSubmitted": true,
+  "resumeQuestionFiled": true,
+  "linkList": [
+    {
+      "siteName": "원티드",
+      "siteLink": "wanted.com"
+    },
+    {
+      "siteName": "잡코리아",
+      "siteLink": "jobkorea.com"
+    },
+    {
+      "siteName": "사람인",
+      "siteLink": "saramin.com"
+    }
+  ]
+}
+
+
+

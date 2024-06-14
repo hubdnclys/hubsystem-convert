@@ -1,0 +1,27 @@
+### 사용자 이메일 찾기
+GET http://localhost:8080/v1/employee?name=이름
+
+### 사용자 정보 수정
+PATCH http://localhost:8080/v1/employee
+Content-Type: application/json
+Authorization: ACCESS TOKEN
+
+{
+  "image": "imageUrl",
+  "password": "123456!",
+  "phone": "01099999999"
+}
+
+### 사용자 비밀번호 변경
+PATCH http://localhost:8080/v1/employee/password
+Content-Type: application/json
+
+{
+  "password": "123456!",
+  "name": "이유상",
+  "email": "test1@naver.com"
+}
+
+### 부서로 직원 검색
+GET http://localhost:8080/v1/employee/department?name=PROGRAMMING
+

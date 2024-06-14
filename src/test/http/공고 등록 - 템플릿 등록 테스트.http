@@ -1,0 +1,78 @@
+### 템플릿 등록 테스트
+POST http://localhost:8080/v1/recruit/template
+Authorization: ACCESS TOKEN
+Content-Type: application/json
+
+{
+  "title": "전형 결과 안내",
+  "isMail": true,
+  "isMessage": false,
+  "mailTitle": "안녕하세요. 허브디앤씨 인사 담당자 입니다.",
+  "mailContent": "귀한 시간을 내어 참여해 주신 점 감사드립니다. 지원자님의 우수한 역량에도 불구하고 이번에는 아쉽게도 좋은 소식을 전달드리지 못하게 되었습니다.",
+  "messageTitle": "",
+  "messageContent": ""
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

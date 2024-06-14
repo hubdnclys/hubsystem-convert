@@ -1,0 +1,8 @@
+
+### 공고조회
+GET http://localhost:8080/v1/recruit/2
+
+### 공고 제목으로 공고 조회
+GET http://localhost:8080/v1/recruit/?title=개발자
+
+

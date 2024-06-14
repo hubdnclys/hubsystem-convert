@@ -1,0 +1,29 @@
+### 전형 절차 등록 테스트
+POST http://localhost:8080/v1/recruit/recruit-paper
+Authorization: ACCESS TOKEN
+Content-Type: application/json
+
+{
+  "title": "전형 절차 추가 테스트",
+  "recruitPaperType": "CODING_TEST",
+  "questionList": [
+    {
+      "question": "문제1",
+      "questionContent": "이분 탐색 코드 작성",
+      "answer": "binary search code sample"
+    },
+    {
+      "question": "문제2",
+      "questionContent": "1+1=?",
+      "answer": "2"
+    },
+    {
+      "question": "문제3",
+      "questionContent": "BFS DFS 코드 작성",
+      "answer": "BFS DFS code sample"
+    }
+  ]
+}
+
+
+

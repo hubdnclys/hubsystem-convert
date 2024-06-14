@@ -1,0 +1,87 @@
+### 지원자 등록 테스트
+POST http://localhost:8080/v1/applicant
+Content-Type: application/json
+
+{
+  "recruitId": 2,
+  "name": "이유상",
+  "phone": "010-1111-1111",
+  "email": "liyusang1@naver.com",
+  "department": "PROGRAMMING",
+  "isNew": true,
+  "experienceYear": 1,
+  "applicationPath": "사람인",
+  "recruitmentStage": "INTERVIEW",
+  "resumeUrl": "my Resume Url",
+  "portfolio": "my Portfolio Url"
+}
+
+### 지원자 조회
+GET http://localhost:8080/v1/applicant?page=0&size=10
+
+### 지원자 삭제
+DELETE http://localhost:8080/v1/applicant/2
+Authorization: ACCESS TOKEN
+
+### 지원 단계별 지원자 조회
+GET http://localhost:8080/v1/applicant/recruitment-stage
+
+### 등록
+POST  http://localhost:8080/v1/applicant/register-employee
+Authorization: ACCESS TOKEN
+Content-Type: application/json
+
+{
+  "applicantId": 1,
+  "password": "test123!"
+}
+
+### 지원자 상세조회
+GET http://localhost:8080/v1/applicant/1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
